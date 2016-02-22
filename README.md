@@ -9,10 +9,10 @@
 #### Running our first Git command:
 
 + First we are going to create an account, then git know that who operate me.
-    ```
-    1. git config --global user.name "Salman",
-    2. git config --global user.email “Salman@gmail.com”
-    ```
+```
+1. git config --global user.name "Salman"
+2. git config --global user.email “Salman@gmail.com”
+```
 + Second we create a empty Folder and open it.
 + Then press the right click button and select **Git Bash Here** in your empty folder.
 + You see that one windows file open in pc screen, it's look like a cmmand prompt.
@@ -24,7 +24,7 @@
 ```
 + Second we create a file useing git commands 
 ```
-- echo "you contant" >> file.txt
+- echo "your contant" >> file.txt
 ```
 + Know we are going to **Add** a file who untrack.
 ```
