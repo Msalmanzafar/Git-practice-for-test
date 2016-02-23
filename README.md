@@ -1,5 +1,4 @@
-﻿
-# Getting started with git:
+﻿# Getting started with git:
 #### Installing Git:
 
 + First one we going to install Git.
@@ -38,7 +37,30 @@
 1. git commit -m "First commit"
 2. git commit
 ```
-+ If we write and use this command, it's tell you files are untrack or modified.
+#### Viewing the history:
+ 
++ If we write and use this command, it's tell you files are untrack or   modified.
 ```
-- git status 
+1. git status
+2. git log 
 ```
+#### The staging area:
+
+ The staging area or index is a virtual place that collects all the 
+ files you want to include in the next commit.
+
+#### Unstaging a file:
+
++ Be sure to be in a clean state by typing `git status`.
++ Create a new file `touch NewFile.txt`.
++ Using `git status` again, verify that `NewFile.txt` is untracked.
++ Use the `git add NewFile.txt` command and go on.
++ Use the suggested `git reset HEAD <file name>` or `git rm --cached`    command to back the file in the untracked status.
+
+
+
+
+
+
+
+
