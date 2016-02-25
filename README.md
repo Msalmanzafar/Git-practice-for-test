@@ -78,8 +78,11 @@
 To add a file in the .gitconfig file even if it is marked to be
 ignored, you can use the `git add -f (--force)` option.
 ```
-
-
+#### Highlighting an important commit-Git tags:
+```
+git tag -a Mytagname -m "This is my first tag"
+```
+  Tags will become useful in the future to keep track of important       things such as a newsoftware release.
 
 
 
