@@ -57,7 +57,27 @@
 + Use the `git add NewFile.txt` command and go on.
 + Use the suggested `git reset HEAD <file name>` or `git rm --cached`    command to back the file in the untracked status.
 
+#### Ignoring some files and folders:
 
+  We can create a `.gitignore` file in the repository. Git will read it and then skip the files and folders we listed inside it.
+
++ First we need a working repository.
++ second we need a file `.gitignore` so write a command to create a   file 2nd option to manualy create a `gitignore` file through a right   click option.
++ Put text inside it like.
+```
+# this is a simple of .gitignore file
+  just write any file which you like to ignore it.
+  *.tmp
+```  
++ Save the file.
++ Add the file to the index.
++ commit the `gitignore` file.
++ create a temp file file.tmp with a simple touch command.
++ Try to add all of the files in your working directory to the index     and verify that Git will not add anything.
+```
+To add a file in the .gitconfig file even if it is marked to be
+ignored, you can use the `git add -f (--force)` option.
+```
 
 
 
