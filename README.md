@@ -84,6 +84,43 @@ git tag -a Mytagname -m "This is my first tag"
 ```
   Tags will become useful in the future to keep track of important       things such as a newsoftware release.
 
+#### Branch:
+
++ A branch is essentially another way your repository takes.While   programming, you will use branches to experiment with changes.
++ Let's start using the git branch command alone. If you do this, you    will get a list of the branches included in the current repository `git branch`.
+###### Creating a new branch:
+       Now, let's start creating a new branch for a new activity.
+       `git branch newuser`.
+###### Switching from branch to branch:
+       separate argument. To move around from one branch to another,
+       we will use the `git checkout <branch name>` command.
+###### Merging branches:
+To merge two branches, we have to move to the branch that contains the other branch commits. So, if we want to merge the NewWork branch into the master branch, we would first have to check out the master branch. As seen earlier, to check out a branch we have to type the following command:
+`git checkout <branch name>`
+
+#### Resolving a removed file conflict:
++ Try again using `NewFile.txt` Remove it from the `NewWork` branch and then modify it in `master`do all the follwing commands. 
++ `git rm NewFile.txt`
++ `git commit -m "NewFile.txt removed"`
++ `git checkout -`
++ `echo "this file has not to be removed" >> NewFile.txt`
++ `git add NewFile.txt`
++ `git commit -m "Edited NewFile.txt"`
++ `git merge NetWork`
++ `git status`
++ `git add NewFile.txt`
++ `git commit`
+
+#### Stashing:
+we have some modifications that
+are not ready to be committed, because they are partial, inconsistent, or even won't compile. In this situation, Git prevents you from switching to another branch. You can only switch from one branch to another if you are in a clean state. following these step. 
+
++ `echo "new line Added" >> NewFile.txt`
++ `git checkout -`
++ `git stash`
++ `git status`
++ `git stash list`
++ `git stash apply`
 
 
 
